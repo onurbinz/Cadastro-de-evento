@@ -1,0 +1,33 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": 123,
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/4b3f51ce-b412-41e9-84f1-ee5aea768e3d/attendees
+Content-Type: application/json
+
+{
+    "name": "Bruno Ricardo Pacheco Mattos",
+    "email": "brunorpmattos@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/4b3f51ce-b412-41e9-84f1-ee5aea768e3d
+
+###
+GET http://localhost:3333/attendees/1/badge
+
+###
+
+GET http://localhost:3333/attendees/3/check-in
+
+
+###
+GET http://localhost:3333/events/4b3f51ce-b412-41e9-84f1-ee5aea768e3d/attendees
